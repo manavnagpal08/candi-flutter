@@ -147,10 +147,9 @@ flutter run -d chrome
 
 ## 📸 Platform Previews
 
-* Placement Dashboard
-* Talent Connect Hub
-* AI Mock Interview Flow
-* Resume Screening Analytics
+| Placement Dashboard | Talent Connect Hub | AI Readiness Flow |
+| :---: | :---: | :---: |
+| ![Dashboard](assets/screenshots/dashboard.png) | ![Connect](assets/screenshots/login.png) | ![Intelligence](assets/docs/architecture.png) |
 
 ---
 
@@ -170,7 +169,8 @@ Traditional campus placement systems suffer from poor visibility, lack of prepar
 
 ## 👥 Team
 
-* **Manav Nagpal**  , * **Kaaysha Rao** 
+* **Manav Nagpal**  ,
+* **Kaaysha Rao** 
 ---
 
 © 2026 ScreenerPro — Powering the Future of Campus Placements 🚀
