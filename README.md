@@ -159,6 +159,10 @@ flutter run -d chrome
 | :---: | :---: |
 | ![Resume](assets/screenshots/Screenshot%202026-03-24%20223300.png) | ![Workflow](assets/screenshots/Screenshot%202026-03-24%20223747.png) |
 
+| AI MOCK INTERVIEW | |
+| :---: |
+| ![Ranking](assets/screenshots/Screenshot%202026-03-24%20223006.png) |
+
 ---
 
 ## 💡 Why This Solves Campus Problems
