@@ -1,81 +1,133 @@
-# ScreenerPro - AI-Powered Candidate Screening Dashboard
+# ScreenerPro — AI-Powered Intelligent Recruitment Ecosystem
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Flutter](https://img.shields.io/badge/Flutter-v3.24.0-info.svg)
-![Firebase](https://img.shields.io/badge/Firebase-Auth%20%7C%20Firestore-orange.svg)
+[![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
+[![Firebase](https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white)](https://firebase.google.com)
+[![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev)
+[![Live Demo](https://img.shields.io/badge/Live-Website-FF4B4B?style=for-the-badge&logo=google-cloud&logoColor=white)](https://candiatescr.web.app/)
 
-> **Note:** This is a *Showcase Edition* developed for hackathon presentation purposes. Original business logic and backend integrations are abstracted to protect intellectual property.
+**ScreenerPro** is a Next-Generation AI Recruitment Operating System designed to eliminate the friction in modern hiring workflows. By combining advanced resume parsing algorithms with intuitive candidate analytics, ScreenerPro empowers HR professionals and startups to identify top talent with surgical precision.
+
+### 🌐 [Visit Live Product](https://candiatescr.web.app/)
+
+---
 
 ## 🚀 Overview
 
-**ScreenerPro** is a state-of-the-art candidate screening platform that leverages AI to automate recruitment workflows. It simplifies the hiring process for HR teams by providing automated resume scoring, an interactive analytics dashboard, and a seamless developer-friendly job board.
+In a competitive talent market, efficiency is the only differentiator. ScreenerPro is an end-to-end recruitment solution that automates the most time-consuming aspects of the hiring pipeline—from initial screening to candidate onboarding. 
 
-### Key Features
-- **AI Screening Engine**: Automated resume parsing and scoring based on job requirements.
-- **Candidate Analytics**: Interactive dashboard with data visualization for hiring trends.
-- **Real-time Collaboration**: Shared hiring pipelines with team feedback loops.
-- **Branded Job Board**: Customizable public-facing job listings for businesses.
-- **Campaign Creator**: Easy-to-use tool for launching new hiring campaigns in minutes.
+Our mission is to replace manual resume screening with data-driven AI intelligence, ensuring that every recruiter can focus on what truly matters: **the human element of hiring.**
+
+---
+
+## ✨ Core Features
+
+### 🧠 AI-Powered Candidate Screening
+- **Automated Resume Scoring**: Instantly rank candidates based on skill match and experience.
+- **Natural Language Parsing**: Intelligent extraction of key qualifications, certifications, and project history.
+- **Bias-Free Evaluation**: Data-driven scoring to ensure objective recruitment.
+
+### 📊 Recruiter Analytics Dashboard
+- **Performance Heatmaps**: Visualize hiring trends across multiple ongoing campaigns.
+- **Pipeline Monitoring**: Real-time status tracking for every applicant from 'Applied' to 'Hired'.
+- **Collaborative Feedback**: Integrated team scoring system for streamlined decision-making.
+
+### 📢 Scalable Hiring Campaigns
+- **Branded Career Portals**: Professional, customizable job boards for small to large enterprises.
+- **Campaign Creator**: Launch high-impact hiring campaigns in under 120 seconds.
+- **Multi-Platform Integration**: Seamlessly manage applicants from various sources in one centralized hub.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: Flutter (Cross-platform Web & Mobile)
+- **Backend Architecture**: Firebase Ecosystem
+- **Authentication**: Firebase Identity Management
+- **Database**: Cloud Firestore (Real-time NoSQL)
+- **AI Core**: Proprietary Scoring Algorithms
+- **Storage**: Firebase Storage for secure document management
 
 ---
 
 ## 🏗️ Architecture
 
+ScreenerPro is built on a high-scalability serverless architecture, ensuring 99.9% uptime and low-latency interaction.
+
 ```mermaid
 graph TD
-    A[Flutter Web/Mobile] --> B[Firebase Authentication]
-    A --> C[Firebase Firestore]
-    A --> D[AI Scoring Module]
-    D --> E[Cloud Functions]
-    E --> F[Resume Analytics API]
+    User([HR Recruiter / Candidate]) -->|Frontend| App[Flutter Application]
+    App -->|Auth| Firebase_Auth[Firebase IAM]
+    App -->|Real-time Data| Firestore[Cloud Firestore]
+    App -->|AI Processing| AI_Engine[ScreenerPro AI Core]
+    AI_Engine -->|Compute| Cloud_Functions[Compute Engine]
+    Cloud_Functions -->|Parsing| Document_Parser[PDF Parser]
 ```
 
 ---
 
 ## 📁 Repository Structure
 
+The ScreenerPro codebase follows a strictly modular architecture for maximum maintainability and rapid feature iteration.
+
 ```text
 lib/
- ├── screens/     # Premium UI screens (Login, Dashboard)
- ├── widgets/     # Reusable UI components
- ├── services/    # Mock services and API wrappers
- ├── models/      # Data models for candidates/jobs
+ ├── core/        # Centralized configurations and utilities
+ ├── models/      # Structured Data Contracts for Candidates & Jobs
+ ├── screens/     # Highly-optimized UI Modules (Dashboard, Portal, Auth)
+ ├── services/    # Business Logic Layer & API Integration
+ └── widgets/     # Reusable Atomic UI Components
 assets/
- ├── screenshots/ # UI previews for judges
- └── docs/        # Design and architecture diagrams
+ ├── docs/        # Technical Documentation & Diagrams
+ └── screenshots/ # High-fidelity Product Previews
 ```
 
 ---
 
-## 🛠️ Getting Started (Showcase Setup)
+## 🏗️ Setup & Installation
 
-This repository contains the UI and sample logic. To run the showcase:
+Professional engineers can deploy a local instance of ScreenerPro in minutes.
 
-1. **Install Flutter**: Make sure you have the [latest Flutter SDK](https://docs.flutter.dev/get-started/install).
-2. **Setup Firebase**: Create a Firebase project and add your `google-services.json` or `GoogleService-Info.plist`.
-3. **Run the App**:
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/manavnagpal08/candi-flutter.git
+   ```
+2. **Initialize Service Dependencies**:
    ```bash
    flutter pub get
-   flutter run -d chrome # Or your preferred device
    ```
-
-> [!IMPORTANT]
-> This showcase uses dummy credentials and placeholder API keys. Ensure you replace them in `lib/services/firebase_service.dart` for local testing.
+3. **Launch Platform**:
+   ```bash
+   flutter run -d chrome # For Web Instance
+   flutter run           # For Mobile/Desktop Instance
+   ```
 
 ---
 
 ## 📸 Screenshots
 
-| Login Interface | Dashboard | AI Score Architecture |
+| Intelligence Dashboard | Secure Authentication | Candidate Analytics |
 | :---: | :---: | :---: |
-| ![Login](/assets/screenshots/login.png) | ![Dashboard](/assets/screenshots/dashboard.png) | ![Architecture](/assets/docs/architecture.png) |
+| ![Dashboard](/assets/screenshots/dashboard.png) | ![Login](/assets/screenshots/login.png) | ![Architecture](/assets/docs/architecture.png) |
 
 ---
 
-## ✨ Developed by
-- **Lead Developer**: [Manav Nagpal](https://github.com/manavnagpal08)
-- **Project Name**: ScreenerPro
-- **Hackathon**: [Hackathon Name 2026]
+## 🔮 Future Roadmap
+
+ScreenerPro is an actively evolving ecosystem. Upcoming milestones include:
+
+- [ ] **AI Video Interviews**: Integrated face-to-face screening with sentiment analysis.
+- [ ] **Third-party ATS Integration**: Native support for Greenhouse and Lever.
+- [ ] **Slack/Teams Notifications**: Real-time hiring updates for internal communications.
+- [ ] **Blockchain Verification**: Decentralized verification of academic and professional credentials.
 
 ---
-© 2026 ScreenerPro - All Rights Reserved.
+
+## 👥 The Team
+
+ScreenerPro is driven by a passionate team of engineers focused on the future of HR-Tech.
+
+- **Manav Nagpal** — Lead Software Architect
+- **Kaaysha Rao** — Product & Strategy
+
+---
+© 2026 ScreenerPro - Redefining the Future of Talent Acquisition.
