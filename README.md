@@ -147,9 +147,17 @@ flutter run -d chrome
 
 ## 📸 Platform Previews
 
-| Placement Dashboard | Talent Connect Hub | AI Readiness Flow |
-| :---: | :---: | :---: |
-| ![Dashboard](assets/screenshots/dashboard.png) | ![Connect](assets/screenshots/login.png) | ![Intelligence](assets/docs/architecture.png) |
+| Intelligence Dashboard | Secure Student Hub |
+| :---: | :---: |
+| ![Dashboard](assets/screenshots/Screenshot%202026-03-28%20213021.png) | ![Student Hub](assets/screenshots/Screenshot%202026-03-28%20213043.png) |
+
+| AI Mock Practice | Talent Networking |
+| :---: | :---: |
+| ![Mock Interview](assets/screenshots/Screenshot%202026-03-24%20222632.png) | ![Networking](assets/screenshots/Screenshot%202026-03-24%20222740.png) |
+
+| Resume Analytics | Paperless Workflows |
+| :---: | :---: |
+| ![Resume](assets/screenshots/Screenshot%202026-03-24%20223300.png) | ![Workflow](assets/screenshots/Screenshot%202026-03-24%20223747.png) |
 
 ---
 
